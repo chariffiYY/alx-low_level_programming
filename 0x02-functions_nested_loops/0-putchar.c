@@ -1,19 +1,21 @@
 #include "main.h"
 /**
- * main - main block
- * Description: Print _putchar followed by a new line.
+ * main - print _putchar
+ * is written by fatima
  * Return: 0
  */
+
 int main(void)
 {
-	char alx[10] = "_putchar";
+char pull[] = "_putchar";
+int i = 0;
 
-	int i;
+while (pull[i] != '\0')
+{
+_putchar(pull[i]);
+i++;
+}
 
-	for (i = 0; i < 8; i++)
-	{
-		putchar(alx[i]);
-	}
-	putchar(10);
-	return (0);
+_putchar('\n');
+return (0);
 }
